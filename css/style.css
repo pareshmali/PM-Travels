@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    /* 10px */
+}
+
+
+body{
+    font-family:sans-serif;
+}
+
+/* ######### utility classes ######### */
+ul li{
+    list-style: none;
+}
+p,li{
+    font-size: 1.6em;
+    margin: 0.5em;
+}
+h1{
+    margin-bottom: 0.5em;
+    font-weight: 500px;
+    font-size:3.2rem;
+}
+
+h2,h3{
+    margin-bottom: 0.5em;
+    font-weight: 500px;
+    font-size:2.2rem ;
+}
+.textwhite{
+    color: white;
+
+}
+.textblack{
+    color: black;
+}
+.textred{
+    color: red;
+}
+.textgrey{
+    color: grey;
+    font-weight: 600;
+}
+.dark{
+    background-color: #263238;
+}
+
+/* #### buttons ######## */
+.btn{
+    display: inline-block;
+    padding:1rem 1.5rem;
+    text-transform: uppercase;
+    margin:0.5em 0;
+}
+.btn-primary{
+    background-color: white;
+    color: red;
+    border-radius: 100px;
+    font-size: 2rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px 0 rgb(54, 54, 54);
+
+}
+.btn-primary:hover{
+    background-color:#ddd ;
+
+}
+.btn-secondary{
+   display: inline-block;
+    background: white;
+    color: red;
+    border: 2px solid red;
+    border-radius:20px;
+    padding:0.5rem;
+    text-transform: lowercase;
+    font-size: 2rem;
+    font-weight: 500px;
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+
+}
+/* its all about navigation and background img */
+header{
+    position: relative;
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/header-image\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .navbar .logo ,a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+  /* border: 2px solid rgb(59, 218, 98); */
+  padding: 1em;
+}
+.logo{
+    float: left;
+    font-size: 3.6rem;
+    color: white;   
+}
+
+.navitems{
+    float: right;
+    
+}
+.navitem{
+    display: inline-block;
+    padding: 1em;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px auto;
+
+}
+.container1{
+    max-width: 1200px;
+    width: 70%;
+    margin: 10px auto;
+}
+.navitem a:hover{
+    color: red;
+}
+.navitem a:active{
+    color: violet;
+}
+.navbar .logo:hover{
+    color:red;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navitems1{
+    text-align:center;
+}
+.navitem1{
+    display: inline-block;
+    /* padding: 1em; */
+    font-weight: 600;
+    font-size: 2rem;
+    padding:2rem;
+  
+    text-align:center;
+   
+}
+.navitem1 a:hover{
+    color: red;
+}
+.navitem1 a:active{
+    color: violet;
+}
+.navbar1 .logo:hover{
+    color:red;
+}
+
+.navbar1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* all navigation completed here */
+/* header content */
+.header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+/* header content completed  */
+/* we use absolute and relative tags  */
+
+
+/* ######### show case ########## */
+/* showcase section style */
+.showcase{
+    background:#ddd;
+    padding: 7rem 0;
+}
+.row{
+    height:300px ;
+    /* border: 2px solid red;  */
+    background: #fff;
+    box-shadow: 10px 15px 20px 0px rgba(41, 40, 40, 0.418);
+
+}
+.row1{
+    margin-bottom:6rem ;
+}
+.row1 .imgbox , .row2 .textbox{
+    float:left;
+    width: 50%;
+}
+.row2 .imgbox , .row1 .textbox{
+    float:right;
+    width: 50%;
+}
+.row .imgbox{
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+.row .textbox{
+    /* border: 2px solid rgb(174, 216, 23); */
+    /* height: 100%; */
+    padding: 30px;
+    font-size:1.3rem;
+}
+.row .imgbox img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row1 h2, .row2 h2{
+    padding-bottom:15px;
+    
+} 
+.row::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+/* ########## Features section styling ############## */
+.features{
+    padding:10rem 0;
+}
+.boxwrapper{
+    box-shadow: 5px 10px 20px 0px rgba(63, 62, 62, 0.568);
+    
+}
+.box{
+    
+    width: 33.3333%;
+    float: left;
+    /* border: 2px solid rgb(13, 14, 13); */
+    padding: 1rem;
+    /* border: 2px solid rgb(13, 14, 13); */
+    text-align: center;
+   
+}
+.box1,.box3{
+    background-color: #263238;
+    color: #fff;
+}
+.box2{
+    background-color:#E52B50 ;
+    color: #fff;
+}
+.boxwrapper h2{
+    padding-top: 0.5rem;
+
+}
+
+.boxwrapper::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+/* all showcase is completed */
+
+/* footer is starting now */
+
+
+.footer{
+    background: #263238;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 10px 5px 20px 0px rgb(94, 92, 92);
+
+}
+.socialmedia i{
+    margin:2rem;
+    
+}
+/* footer is completed  */
+/* lets we start now about page 
+in about page navbar is same we copy from html same as to
+ */
+
+ /* ############# About Page ################ */
+ .about{
+     padding:4rem;
+     
+ }
+ .bottom{
+     border-bottom: 5px solid red;
+     width: 100%;
+ }
+ .left{
+     
+     float: left;
+     width: 50%;
+ }
+ .right{
+     float: right;
+     width: 50%;
+ }
+ .aboutwrapper{
+    /* border: 3px solid rgb(85, 82, 82); */
+     margin: 2rem;
+    padding: 1rem;     
+    text-align:center;
+ }
+ .aboutwrapper::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .aboutwrapper li::before{
+     content:'\2713';
+     color: black;
+     padding: 0.5rem;
+     font-weight: bold;
+ }
+
+
+/* ################ count style  ################ */
+
+.count{
+    margin-top: 1rem;
+    /* border: 2px solid red; */
+}
+.countitem{
+        margin: 1.4rem;
+        padding: 0.5rem;
+        /* border: 4px solid red; */
+        float: left;
+        width: 20%;
+        text-align: center;
+        font-weight: 600;
+}
+ .countitem span{
+     font-size: 2.5rem;
+     color: #e63946;
+ }
+ .countitem p{
+     color: #555;
+ }
+.count::after{
+    
+    content: '';
+    display: block;
+    clear: both;
+}
+ /* count completed */
+
+/* ###### support assist ############## */
+
+.support{
+    background: rgb(241, 84, 57);
+    color: white;
+    padding: 1.5rem;
+    margin-top:1rem ;
+    box-shadow: 5px 5px 20px 0px rgb(156, 152, 152);
+}
+.help{
+    width: 50%;
+    float: left;
+    font-size: 1.4rem;
+
+
+}
+.number{
+ width: 40%;
+ float: right;
+ font-size: 2.4rem;
+ padding-top: 1rem;
+ text-align: right;
+ margin-top: 0.5rem;
+}
+.btncontact{
+    padding: 1rem;
+    /* margin-top: 0.5rem; */
+    background-color: white;
+    color: rgb(240, 69, 69);
+    border-radius: 10px;
+    /* font-size: 20px; */
+    font-weight: 600;
+    text-align:center;
+    box-shadow: 5px 5px 10px 0 rgb(201, 91, 91);
+
+
+}
+.btncontact:hover{
+    color: black;
+}
+.support::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ /* about page is completed */
+
+/* ############## contact page #################  */
+  
+
+.contactpage{
+    padding: 5rem 0rem;
+    background: #f7f7f7;
+    
+}
+.formwrapper{
+  /* border: 2px solid red; */
+
+}
+.companyaddres{
+    height: 600px;
+    background:#fff;
+    /* border: 2px dotted green; */
+    width: 48%;
+    float:left;
+    padding:1rem ;
+
+}
+.companyaddres i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.companyaddres h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.formwrapper .adressgroup{
+    padding-bottom: 1rem;
+    
+}
+.formwrapper .companyaddres img{
+   max-width: 70%;
+   min-height:30rem ;
+   object-fit: cover;
+
+
+}
+.form{
+    background: #fff;
+    /* border: 2px dotted black; */
+    width: 48%;
+    float: right;
+}
+.formwrapper::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+
+/* ###### form styling ###### */
+
+.formwrapper .form{
+    height: 600px;
+    font-size: 1.6rem;
+    background: #fff;
+    /* border: 4px solid black; */
+    width: 48%;
+    float: right;
+
+}
+.form h1::after{
+    content:'';
+    display: block;
+    border: 3px solid red;
+    width: 100%;
+}
+.formwrapper label{
+    display: block;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+.formwrapper .form input{
+    padding:0.5rem;
+    width: 100%;
+}
+ .form .formgroup{
+    margin-bottom: 1.5rem;
+}
+.formwrapper .form label::after{
+    content:"*";
+    color: #e63946;
+
+} 
+.formwrapper .form textarea{
+    width: 100%;
+    height: 150px;
+    padding: o.7rem;
+
+}
+.form .formbtn{
+   display:block ; 
+   margin: 0 auto;
+   padding: 0.8rem 3rem;
+   background: #e63946;
+   text-align: center;
+   border-radius: 100px;
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: white;
+   border: none;
+   cursor: pointer;
+
+}
+/* ####### form styling completed ###### */
+
+
+/* ####################  Media Querys ################## */
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .navitems ,.navitem .logo{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox, .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+     .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        /* margin-top: 5rem; */
+    }
+    .box2, .box3{
+        margin-top: 4rem;
+    }
+    .count .countitem{
+        
+        float: none;
+        width: 100%;
+        text-align: center;
+        /* height: 100%; */
+    }
+    .help, .number{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .formwrapper .companyaddres{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .formwrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media(min-width:501)and (max-width:800){
+    html{
+        font-size: 50%;
+    }
+    .navbar .navitems ,.navitem .logo{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox, .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+     .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        
+        /* margin-top: 5rem; */
+    }
+    
+    .box2, .box3{
+        margin-top: 4rem;
+    }
+    .count .countitem{
+        
+        float: none;
+        width: 100%;
+        text-align: center;
+        /* height: 100%; */
+    }
+    .help, .number{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .formwrapper .companyaddres{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .formwrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+@media (max-width:350px){
+    html{
+        font-size: 50%;
+    }
+    .navitem{
+        display: inline-block;
+        padding: 0.5em;
+        font-weight: 600;
+        font-size: 1.4rem;
+}
+}
+@media (orientation:landscape) and (max-height:500px){
+  .header{
+      height: 90vmax;
+  }  
+}
+
+############### responcive completed###############
+
+.footer p{
+    padding-bottom: 1rem;
+}
+.adressgroup a{
+    color: black;
+}
+@media(max-width:400px){
+    .navitem {
+        margin-top:8rem;
+    }
+    .textwhite{
+        padding:1rem;
+    }
+    h1 {
+         font-size:2.3rem;
+   }
+   .textwhite p{
+          font-size:1.5rem;
+   }
+    h3{
+    font-size:2rem;
+   }
+   .navitem1{
+   
+    /* font-size:1.2rem; */
+    /* padding:0.4rem; */
+    /* width:50%; */
+    /* margin:auto 0px; */
+    
+
+   }
+   .navitem1{
+    font-size:1.3rem;
+    /* padding:1rem; */
+    /* width:900px; */
+    /* margin:auto 0px; */
+   }
+   .textgrey {
+    font-size:1.7rem;
+    
+   }
+   .contactpage{
+    margin:1rem;
+    padding:1rem;
+   }
+  
+  
+
+    
+}
+
+
+
